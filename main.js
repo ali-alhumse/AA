@@ -1,4 +1,4 @@
-const STORAGE_KEY = "birthday_project_played"; 
+const STORAGE_KEY = "asma_birthday"; 
 const app = document.getElementById("app");
 
 const slides = []; 
@@ -926,12 +926,12 @@ function heartSlide() {
         
         // رسم الحرف
         ctx.fillStyle = gradient;
-        ctx.fillText('N', centerX, centerY);
+        ctx.fillText('A', centerX, centerY);
         
         // تأثير حدود
         ctx.strokeStyle = '#ffffff';
         ctx.lineWidth = 3;
-        ctx.strokeText('N', centerX, centerY);
+        ctx.strokeText('A', centerX, centerY);
         
         ctx.restore();
     }
@@ -1297,7 +1297,7 @@ function cakeSlide() {
                 <i class="fa-solid fa-arrow-right"></i>
                  Continue
             </button>
-          <p class="cake-hint">نجوومتي اكبسي عالنار اللي فوق الشمعات</p>
+          <p class="cake-hint">أسومتي اضغطي على النار اللي فوق الشموع</p>
         </div>
     `;
 

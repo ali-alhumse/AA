@@ -40,7 +40,7 @@ function endProject() {
 }
 
 function renderStartScreen() {
-  const TARGET = new Date(2026, 4, 6, 0, 0, 0, 0); // May 6, 2026 midnight
+  const TARGET = new Date(2026, 12, 30, 0, 0, 0, 0); // des 30, 2026 midnight
 
   function pad(n) { return String(n).padStart(2, '0'); }
 
@@ -51,11 +51,11 @@ function renderStartScreen() {
 
     // Days remaining
     const nowMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-    const targetMidnight = new Date(2026, 4, 6, 0, 0, 0, 0);
+    const targetMidnight = new Date(2026, 12, 30, 0, 0, 0, 0);
     const daysLeft = Math.ceil((targetMidnight - nowMidnight) / 86400000);
 
     // Time left until end of today (or until target on last day)
-    const isLastDay = now.getDate() === 6 && now.getMonth() === 4 && now.getFullYear() === 2026;
+    const isLastDay = now.getDate() === 30 && now.getMonth() === 12 && now.getFullYear() === 2026;
     const endOfPeriod = isLastDay
       ? TARGET
       : new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 0, 0);
